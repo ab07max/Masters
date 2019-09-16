@@ -1,0 +1,8 @@
+{
+  "databaseServer": "127.0.0.1",
+  "databasePort": "3306",
+  "databaseUsername": "root",
+  "databasePassword": "root",
+  "databaseName": "dataSet",
+  "charSet": "utf8mb4"
+}
