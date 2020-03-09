@@ -1,0 +1,5 @@
+hadoop	4
+hbase	1
+hive	1
+pig	2
+spark	3
