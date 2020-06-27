@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  #wrap {
+    min-height: 100%;
+  }
+  
+  #main {
+    overflow: auto;
+    padding-bottom: 40px;
+    z-index: 1;
+    /* must be same height as the footer */
+  }
+
+#first{
+    color:azure;
+    text-anchor: end;
+    text-align: center;
+    border: none;
+    padding: 20px;
+    background-color: #020202; 
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.5;
+}
+#second{
+    background-image: url('../img/Georgia_State_Athletics_logo.png');
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-size:cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+
+    /* background-image: url('../img/769189.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:720px;width:1487px; */
+}
+
+a {
+    color:azure;
+}
+
+#profile {
+    float: right;
+    border-radius: 50%;
+    padding: 20px; 
+}
+
+#profile-sections {
+    background-color: aqua;
+}
+
+  
+#footer {
+    text-align: center;
+    position: relative;
+    margin-top: -40px;
+    /* negative value of footer height */
+    height: 40px;
+    clear: both;
+    background-color:#020202;
+    opacity: 0.5;
+}
+
+#third {
+    position: absolute;
+    color: azure;
+    left: 2%;
+    font-size: x-large;
+    border: none;
+    padding: 20px;
+    background-color: #020202; 
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.75;
+}
+
+#fourth {
+  position: absolute;
+  color: azure;
+  left: 35%;
+  font-size: x-large;
+  border: none;
+  padding: 20px;
+  background-color: #020202; 
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 22%;
+  opacity: 0.75;
+}
+
+#fifth {
+  position: absolute;
+  color: azure;
+  left: 60%;
+  font-size: x-large;
+  border: none;
+  padding: 20px;
+  background-color: #020202; 
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 29%;
+  opacity: 0.75;
+}
+
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: solid 1px #CCC;
+  padding: 10px;
+}
+.fixed {
+  max-width: 300px;
+  min-width: 300px;
+}
+.fluid {
+      width: 2%;
+}
+
+#header1, #header2, #header3 {
+color: azure;
+font-size: 15px;
+}
+#header1:hover, #header2:hover, #header3:hover{
+color: #14bf98;
+}
+
