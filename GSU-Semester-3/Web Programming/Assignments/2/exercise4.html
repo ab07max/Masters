@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset="UTF-8">
+        <title>
+            A2 - E4
+        </title>
+    </head>
+    <body>
+        <h1>Check which items you want to buy</h1><br/>
+        
+        <form id="cart-items">
+            <input type="checkbox" name="cart" value="Milk"> Milk <br/>
+            <input type="checkbox" name="cart" value="Bread"> Bread <br/>
+            <input type="checkbox" name="cart" value="Soda"> Soda <br/>
+            <input type="checkbox" name="cart" value="Eggs"> Eggs <br/>
+            <input type="checkbox" name="cart" value="Pasta"> Pasta <br/>
+            <button id="btn">Check items</button>    
+        </form>
+        <script>
+
+            function getSelectedCheckboxValues(name) {
+                const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+                let values = [];
+                checkboxes.forEach((checkbox) => {
+                    values.push(checkbox.value);
+                });
+                return values;
+            }
+
+            const btn = document.querySelector('#btn');
+            btn.addEventListener('click', (event) => {
+                alert(getSelectedCheckboxValues('cart') + ' are in your cart');
+                document.getElementById("cart-items").resrt();
+            });
+
+        </script>
+    </body>
+</html>    

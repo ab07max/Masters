@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset="UTF-8">
+        <title>
+            A2 - E6
+        </title>
+        <script type="text/javascript">
+            function login() {
+                var username = ["user1", "user2", "user3"]
+                var password = ["user1-111", "user2-222", "user3-333"]
+                var userText = document.getElementById("username").value;
+                var userPass = document.getElementById("password").value;
+                if(username.includes(userText) && password.includes(userPass)) {
+                    alert("Login Successful!");
+                }
+                else if(!username.includes(userText)) {
+                    alert("The username does not exist");
+                }
+                else {
+                    alert("Invalid password");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Log in</h1><br/>
+
+        <form id="login">
+            Username: <input type="text" id="username" placeholder="Enter your name"><br/><br/>
+
+            Password: <input type="password" id="password" placeholder="password must be 6-8 characters long"><br/><br/>
+
+            <input type="button" value="Login" onclick="login()">
+        </form>
+
+    </body>
+</html>    

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset="UTF-8">
+        <title>
+            A2 - E5
+        </title>
+    </head>
+    <body>
+        <h1>Array to Table</h1><br/>
+        <table id="table" border="1">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Major</th>
+        </table>
+        <script>
+            var students = [
+                { name: "Andy", id: 001, major: "Computer Science" },
+                { name: "Ben", id: 002, major: "Biology" },
+                { name: "Hari", id: 003, major: "Computer Science" },
+                { name: "Lisa", id: 004, major: "Physic" },
+                { name: "Wendy", id: 005, major: "Math" }
+            ];
+            
+            var table = document.getElementById("table");  // set this to your table
+            var tbody = document.createElement("tbody");
+            table.appendChild(tbody);
+
+            students.forEach(function(student) {
+                var row = document.createElement("tr");
+                var idCell = document.createElement("td");
+                idCell.textContent = student.id;
+                var nameCell = document.createElement("td");
+                nameCell.textContent = student.name;
+                var majorCell = document.createElement("td");
+                majorCell.textContent = student.major;
+                row.append(idCell);
+                row.append(nameCell);
+                row.append(majorCell);
+                tbody.appendChild(row);
+            });
+            
+        </script>
+
+    </body>
+</html>    

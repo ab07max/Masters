@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset="UTF-8">
+        <title>
+            A2 - E3
+        </title>
+        <script type="text/javascript">
+            function input() {
+                document.getElementById("result").innerHTML += arguments[0];
+            }
+        </script>
+    </head>
+    <body>
+        <h1>A simple virtual keyboard</h1><br/>
+
+        <button type="button" onclick="input('A')">A</button>
+        <button type="button" onclick="input('B')">B</button>
+        <button type="button" onclick="input('C')">C</button>
+        <button type="button" onclick="input('D')">D</button>
+        <button type="button" onclick="input('E')">E</button>
+        <button type="button" onclick="input('F')">F</button>
+        <button type="button" onclick="input('G')">G</button>
+        <button type="button" onclick="input('H')">H</button>
+        <button type="button" onclick="input(' ')">space</button><br/>
+
+        <span id="result"></span>
+    </body>
+</html>    
