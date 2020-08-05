@@ -1,0 +1,55 @@
+h2
+{
+  background-color: blue;
+  opacity: 0.5;
+}
+
+div
+{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.pos
+{
+  position: absolute;
+  top: 150px;
+}
+
+table, th, td
+{
+  border: 1px solid red;
+}
+
+td.bg
+{
+  background-color: green;
+}
+
+td.bd
+{
+  border-style: dashed;
+}
+
+th.padding
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.user1
+{
+   text-align: right;
+   color: violet;
+}
+
+#user2
+{
+  text-align: center;
+  font-style: italic;
+}
+
+span {
+    color: goldenrod;
+}

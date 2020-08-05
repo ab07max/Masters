@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            CW7 - Activity-1
+        </title>
+        <style></style>
+    </head>
+    <body>
+        <h2>Personal Information</h2>
+        <form method="post" enctype="text/plain" action="mailto:vbhamidipati1@student.gsu.edu">
+            <h4>Contact details</h4>
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td>  <select name="title" id="title">
+                          <option value="mr">Mr</option>
+                          <option value="mrs">Mrs</option>
+                          <option value="miss">Miss</option>
+                          <option value="ms">Ms</option>
+                          <option value="dr">Dr</option>
+                        </select>
+                        <input type="text" size="40" maxlength="35" name="personal-name"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="text" size="40" maxlength="40" name="personal-email"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth: </td>
+                    <td><select name="day" id="day" size="3"> 
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        </select>
+                        <select name="month" id="month" size="3"> 
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                        </select>
+                        <select name="year" id="year" size="3"> 
+                            <option>1960</option>
+                            <option>1961</option>
+                            <option>1962</option>
+                            <option>1963</option>
+                            <option>1964</option>
+                            <option>1965</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Address: </td>
+                    <td><textarea name="personal-address" rows="3" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td><select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                      Status: <select name="status" id="status">
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="student">Student</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Postcode: </td>
+                    <td><input type="text" size="10" maxlength="10" name="personal-postcode"></td>
+                </tr>
+                </table>
+            <h4>Additional details</h4>
+            <table>
+                <tr>
+                    <td>Which games did you play? </td>
+                    <td><input type="checkbox" id="gtav" name="gtav" value="gtav">
+                        <label for="gtav">GTA V</label>
+                        <input type="checkbox" id="wd" name="wd" value="wd">
+                        <label for="wd">Watch Dogs</label><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>How much did you enjoy the 'Star Wars' Trilogy?</td>
+                    <td><input type="radio" id="enjoy" name="star-wars-trilogy" value="enjoy">
+                        <label for="enjoy">I enjoyed it</label>
+                        <input type="radio" id="not-enjoy" name="star-wars-trilogy" value="not-enjoy">
+                        <label for="not-enjoy">I did not enjoy it</label>
+                        <input type="radio" id="not-seen" name="star-wars-trilogy" value="not-seen">
+                        <label for="not-seen">I have not seen it</label><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Which email addresses can I contact you at?</td>
+                    <td><input type="checkbox" id="student" name="student" value="student">
+                        <label for="student">Student email</label>
+                        <input type="checkbox" id="personal" name="personal" value="personal">
+                        <label for="personal">Personal email</label><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Chocolate is delicious? </td>
+                    <td><input type="radio" id="strong-agree" name="chocolate-delicacy" value="strong-agree">
+                        <label for="strong-agree">Strongly agree</label>
+                        <input type="radio" id="agree" name="chocolate-delicacy" value="agree">
+                        <label for="agree">Agree</label>
+                        <input type="radio" id="neutral" name="chocolate-delicacy" value="neutral">
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" id="disagree" name="chocolate-delicacy" value="disagree">
+                        <label for="disagree">Disagree</label>
+                        <input type="radio" id="strongly-disagree" name="chocolate-delicacy" value="strongly-disagree">
+                        <label for="strongly-disagree">Strongly disagree</label><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Do you watch cricket? </td>
+                    <td><input type="radio" id="yes" name="cricket" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="cricket" value="no">
+                        <label for="no">No</label><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>I am a great cook</td>
+                    <td><input type="radio" id="yes" name="cook" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="cook" value="no">
+                        <label for="no">No</label><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Game of thrones is overrated!</td>
+                    <td><input type="radio" id="strong-agree" name="got" value="strong-agree">
+                        <label for="strong-agree">Strongly agree</label>
+                        <input type="radio" id="agree" name="got" value="agree">
+                        <label for="agree">Agree</label>
+                        <input type="radio" id="neutral" name="got" value="neutral">
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" id="disagree" name="got" value="disagree">
+                        <label for="disagree">Disagree</label>
+                        <input type="radio" id="strongly-disagree" name="got" value="strongly-disagree">
+                        <label for="strongly-disagree">Strongly disagree</label><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Do you play minesweeper?</td>
+                    <td><input type="radio" id="yes" name="mine" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="mine" value="no">
+                        <label for="no">No</label><br>
+                        </td>
+                </tr>
+                </table><br/>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

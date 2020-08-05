@@ -1,0 +1,11 @@
+<title>Palindrome Check</title>
+ 
+	<script type="text/javascript"> 
+		
+		var word = prompt("Enter the word to check if it is palindrome:");
+        if ((word == word.split("").reverse().join(""))) {
+            document.write(word + " is a Palindrome");
+        } else {
+            document.write(word + " is not a Palindrome");
+        }
+	</script>

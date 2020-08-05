@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            CW7 - Job Application
+        </title>
+        <script type="text/javascript">
+            function ValidateForm(frm) {
+            if (frm.First_Name.value == "") {alert('First name is required.');frm.First_Name.focus();return false;}
+            if (frm.Last_Name.value == "") {alert('Last name is required.');frm.Last_Name.focus();return false;}
+            if (frm.Email_Address.value == "") {alert('Email address is required.');frm.Email_Address.focus();return false;}
+            if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email_Address.focus();return false;}
+            if (frm.Position.value == "") {alert('Position is required.');frm.Position.focus();return false;}
+            if (frm.Phone.value == "") {alert('Phone is required.');frm.Phone.focus();return false;}
+            return true; }
+        </script>
+        <style type="text/css"></style>
+    </head>
+    <body>
+        <h2 align="center">IFixPC Employment Application</h2>
+        <hr />
+        <form action="mailto:vbhamidipati1@student.gsu.edu" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top" enctype="text/plain">
+            <table border="0" cellpadding="5" cellspacing="0" align="center">
+                <tr>
+                    <td colspan="2">
+                    <b>Position you are applying for *</b><br />
+                    <input name="Position" type="text" maxlength="100" style="width:535px" autofocus/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%">
+                    <b>First name *</b><br />
+                    <input name="First_Name" type="text" maxlength="50" style="width:260px" />
+                    </td>
+                    <td style="width:50%">
+                    <b>Last name *</b><br />
+                    <input name="Last_Name" type="text" maxlength="50" style="width:260px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Nationality </b><br />
+                        <input name="nationality" type="text" maxlength="100" style="width: 260px;" />
+                    </td>
+                    <td>
+                        <b>Date of Birth</b><br />
+                        <input type="date" id="birthday" name="birthday">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <b>Address</b><br />
+                    <textarea name="address" rows="3" cols="30" style="width:535px"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>Email *</b><br />
+                        <input name="Email_Address" type="text" maxlength="100" style="width:535px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%">
+                    <b>Phone *</b><br />
+                    <input name="Phone" type="text" maxlength="50" style="width:260px" required/>
+                    </td>
+                    <td style="width:50%">
+                    <b>Fax</b><br />
+                    <input name="Fax" type="text" maxlength="50" style="width:260px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <b>Portfolio website</b><br />
+                    <input name="Portfolio" type="text" maxlength="255" value="http://" style="width:535px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <b>Educational history </b><br />
+                    <textarea name="education" rows="3" cols="30" style="width:535px" placeholder="School/College, Course Studied, Qualifications Received, Grades"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="slidecontainer">
+                            <p><b>Number of years of Experience: </b> <span id="demo"></span></p>
+                            <input type="range" min="0" max="10" value="0" class="slider" id="myRange" style="width: 535px;">   
+                          </div>
+                          
+                          <script>
+                          var slider = document.getElementById("myRange");
+                          var output = document.getElementById("demo");
+                          output.innerHTML = slider.value;
+                          
+                          slider.oninput = function() {
+                            output.innerHTML = this.value;
+                          }
+                          </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <b>Employment history *</b><br />
+                    <textarea name="address" rows="3" cols="30" style="width:535px" placeholder="Employer, Date, Position/responsibilities"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <b>Are you willing to relocate?</b><br />
+                    <input name="Relocate" type="radio" value="Yes" /> Yes &nbsp; &nbsp; &nbsp;
+                    <input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
+                    <input name="Relocate" type="radio" value="NotSure" /> Not sure
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <b>Personal statement </b><br />
+                    <textarea name="personal-statement" rows="7" cols="40" style="width:535px" placeholder="Briefly describe your intent to join the company"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">
+                        <b>Reference-1</b><br/>
+                        <table>
+                            <tr>
+                                <td>Name: </td>
+                                <td><input name="refer-name-1" type="text" maxlength="40"/></td>
+                            </tr>
+                            <tr>
+                                <td>Occupation: </td>
+                                <td><input name="refer-occupation-1" type="text" maxlength="40"/></td>
+                            </tr>
+                            <tr>
+                                <td>Relationship: </td>
+                                <td><input name="refer-relation-1" type="text" maxlength="40"/></td>
+                            </tr>
+                            <tr>
+                                <td>Address: </td>
+                                <td><textarea name="refer-address-1" rows="3" cols="22"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Telephone: </td>
+                                <td><input name="refer-phone-1" type="text" maxlength="40"/></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 50%;">
+                        <b>Reference-2</b><br/>
+                        <table style="width: 260px;">
+                            <tr>
+                                <td>Name: </td>
+                                <td><input name="refer-name-2" type="text" maxlength="40" /></td>
+                            </tr>
+                            <tr>
+                                <td>Occupation: </td>
+                                <td><input name="refer-occupation-2" type="text" maxlength="40" /></td>
+                            </tr>
+                            <tr>
+                                <td>Relationship: </td>
+                                <td><input name="refer-relation-2" type="text" maxlength="40"  /></td>
+                            </tr>
+                            <tr>
+                                <td>Address: </td>
+                                <td><textarea name="refer-address-2" rows="3" cols="22" ></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Telephone: </td>
+                                <td><input name="refer-phone-2" type="text" maxlength="40" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div style="text-align:center;">
+            <br /><br />
+            <input type="reset" value="Reset">
+            <input name="skip_Submit" type="submit" value="Send Application" />
+            </div>
+        </form>
+    </body>
+</html>
